@@ -1,0 +1,108 @@
+/* variables */
+:root {
+    /* font */
+    --ff-base: "Open Sans", sans-serif;
+    --ff-accent: "Poppins", sans-serif;
+    --fs-base: 1.125rem;
+    --fs-h1: 2.5rem;
+    --fs-h2: 2rem;
+    --fw-regular: 400;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    /* color */
+    --clr-accent: hsl(322, 100%, 66%);
+    --clr-primary-100: hsl(193, 100%, 96%);
+    --clr-primary-900: hsl(192, 100%, 9%);
+    --clr-neutral-200: hsl(208, 11%, 55%);
+}
+
+/* reset */
+/* box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* remove default margin */
+* {
+    margin: 0;
+}
+
+/*  Allow percentage-based heights in the application */
+html,
+body {
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* tweaking line height */
+body {
+    line-height: 1.5;
+}
+
+/* font smooting */
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+/* media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* inherit font for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* word wrapping */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* remove text decoration anchor tag */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* remove list style */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* utilities */
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+/* general styling */
+body {
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-base);
+    background-color: #fff;
+}
