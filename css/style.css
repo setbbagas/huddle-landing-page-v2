@@ -241,7 +241,7 @@ body {
 
 .cta__wrapper {
     position: absolute;
-    bottom: -10rem;
+    bottom: -7.5rem;
     left: 50%;
     transform: translateX(-50%);
     padding: 4rem 8rem;
@@ -261,6 +261,86 @@ body {
 
 .cta__wrapper .btn {
     margin-inline: auto;
+}
+
+/* footer */
+.footer {
+    background-color: var(--clr-primary-900);
+    padding-block: 12rem 6rem;
+    color: var(--clr-primary-100);
+}
+
+.footer__wrapper {
+    width: clamp(1024px - 4rem, 100% - 10rem, 1440px - 5rem);
+    margin-inline: auto;
+}
+
+.footer__logo {
+    margin-bottom: 3rem;
+}
+
+.footer__flex {
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.footer__flex > * {
+    flex: 1;
+}
+
+.footer__contact {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer__contact p {
+    display: inline-flex;
+    gap: 1rem;
+}
+
+.footer__menu > * {
+    flex: 1;
+}
+
+.menu {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu .item:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.footer__sm {
+    flex-direction: column;
+}
+
+.sm__menu {
+    gap: 1rem;
+}
+
+.sm__menu .item {
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.sm__menu .item:hover {
+    color: var(--clr-accent);
+    border-color: var(--clr-accent);
+}
+
+.sm__menu li:nth-child(1) .item {
+    padding: 3px 9.375px;
+}
+.sm__menu li:nth-child(2) .item {
+    padding: 3px 6px;
+}
+.sm__menu li:nth-child(3) .item {
+    padding: 3px 8.125px;
+}
+.copy__right {
+    margin-top: auto;
 }
 
 @media (max-width: 1024px) {
@@ -310,6 +390,11 @@ body {
         padding-left: 5rem;
         gap: 5rem;
     }
+
+    /* footer */
+    .footer__wrapper {
+        width: clamp(280px - 3rem, 100% - 3rem, 1024px - 3rem);
+    }
 }
 
 @media (max-width: 758px) {
@@ -344,5 +429,24 @@ body {
         font-size: 1.25rem;
         width: 90%;
         margin-inline: auto;
+    }
+
+    /* footer */
+    .footer__flex {
+        flex-direction: column;
+    }
+
+    .footer__menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .menu {
+        gap: 1rem;
+    }
+
+    .footer__sm {
+        gap: 2rem;
+        align-items: center;
     }
 }
